@@ -5,7 +5,58 @@
   </Configs>
   <NewExtensions/>
   <sounds name="sound"/>
-  <sprites name="sprites"/>
+  <sprites name="sprites">
+    <sprite>sprites\alabama_spr</sprite>
+    <sprite>sprites\alaska_spr</sprite>
+    <sprite>sprites\arizona_spr</sprite>
+    <sprite>sprites\arkansas_spr</sprite>
+    <sprite>sprites\california_spr</sprite>
+    <sprite>sprites\colorado_spr</sprite>
+    <sprite>sprites\connecticut_spr</sprite>
+    <sprite>sprites\delaware_spr</sprite>
+    <sprite>sprites\florida_spr</sprite>
+    <sprite>sprites\georgia_spr</sprite>
+    <sprite>sprites\hawaii_spr</sprite>
+    <sprite>sprites\idaho_spr</sprite>
+    <sprite>sprites\illinois_spr</sprite>
+    <sprite>sprites\indiana_spr</sprite>
+    <sprite>sprites\iowa_spr</sprite>
+    <sprite>sprites\kansas_spr</sprite>
+    <sprite>sprites\kentucky_spr</sprite>
+    <sprite>sprites\louisiana_spr</sprite>
+    <sprite>sprites\maine_spr</sprite>
+    <sprite>sprites\maryland_spr</sprite>
+    <sprite>sprites\massachusetts_spr</sprite>
+    <sprite>sprites\michigan_spr</sprite>
+    <sprite>sprites\minnesota_spr</sprite>
+    <sprite>sprites\mississippi_spr</sprite>
+    <sprite>sprites\missouri_spr</sprite>
+    <sprite>sprites\montana_spr</sprite>
+    <sprite>sprites\nebraska_spr</sprite>
+    <sprite>sprites\nevada_spr</sprite>
+    <sprite>sprites\newHampshire_spr</sprite>
+    <sprite>sprites\newJersey_spr</sprite>
+    <sprite>sprites\newMexico_spr</sprite>
+    <sprite>sprites\newYork_spr</sprite>
+    <sprite>sprites\northCarolina_spr</sprite>
+    <sprite>sprites\northDakota_spr</sprite>
+    <sprite>sprites\ohio_spr</sprite>
+    <sprite>sprites\oklahoma_spr</sprite>
+    <sprite>sprites\oregon_spr</sprite>
+    <sprite>sprites\pennsylvania_spr</sprite>
+    <sprite>sprites\rhodeIsland_spr</sprite>
+    <sprite>sprites\southCarolina_spr</sprite>
+    <sprite>sprites\southDakota_spr</sprite>
+    <sprite>sprites\tennessee_spr</sprite>
+    <sprite>sprites\texas_spr</sprite>
+    <sprite>sprites\utah_spr</sprite>
+    <sprite>sprites\vermont_spr</sprite>
+    <sprite>sprites\virginia_spr</sprite>
+    <sprite>sprites\washington_spr</sprite>
+    <sprite>sprites\westVirginia_spr</sprite>
+    <sprite>sprites\wisconsin_spr</sprite>
+    <sprite>sprites\wyoming_spr</sprite>
+  </sprites>
   <backgrounds name="background"/>
   <paths name="paths"/>
   <help>
