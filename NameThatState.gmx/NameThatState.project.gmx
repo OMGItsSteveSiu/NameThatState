@@ -56,9 +56,16 @@
     <sprite>sprites\westVirginia_spr</sprite>
     <sprite>sprites\wisconsin_spr</sprite>
     <sprite>sprites\wyoming_spr</sprite>
+    <sprite>sprites\murica_spr</sprite>
   </sprites>
   <backgrounds name="background"/>
   <paths name="paths"/>
+  <objects name="objects">
+    <object>objects\murica_obj</object>
+  </objects>
+  <rooms name="rooms">
+    <room>rooms\mainMenu_0</room>
+  </rooms>
   <help>
     <rtf>help.rtf</rtf>
   </help>
