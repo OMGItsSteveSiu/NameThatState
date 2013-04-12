@@ -60,9 +60,12 @@
     <sprite>sprites\whereIsThisState_spr</sprite>
     <sprite>sprites\thisStateIs_spr</sprite>
     <sprite>sprites\records_spr</sprite>
+    <sprite>sprites\resetStats_spr</sprite>
     <sprite>sprites\muricaText_spr</sprite>
   </sprites>
-  <backgrounds name="background"/>
+  <backgrounds name="background">
+    <background>background\map_bg</background>
+  </backgrounds>
   <paths name="paths"/>
   <objects name="objects">
     <object>objects\alabama_obj</object>
@@ -119,6 +122,7 @@
     <object>objects\whereIsThisState_obj</object>
     <object>objects\thisStateIs_obj</object>
     <object>objects\records_obj</object>
+    <object>objects\resetStats_obj</object>
     <object>objects\muricaText_obj</object>
     <object>objects\mMSystem_obj</object>
     <object>objects\system_obj</object>

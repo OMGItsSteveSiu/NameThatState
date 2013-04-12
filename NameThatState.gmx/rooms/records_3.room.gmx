@@ -52,6 +52,7 @@
   <instances>
     <instance objName="system_obj" x="0" y="0" name="inst_C624F12C" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="recordsSystem_obj" x="32" y="0" name="inst_7BD71ABD" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="resetStats_obj" x="352" y="384" name="inst_0BB9E044" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
   </instances>
   <tiles/>
   <PhysicsWorld>0</PhysicsWorld>
