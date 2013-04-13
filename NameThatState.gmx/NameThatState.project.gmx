@@ -127,6 +127,7 @@
     <object>objects\mMSystem_obj</object>
     <object>objects\system_obj</object>
     <object>objects\recordsSystem_obj</object>
+    <object>objects\whereIsSystem_obj</object>
   </objects>
   <rooms name="rooms">
     <room>rooms\mainMenu_0</room>
