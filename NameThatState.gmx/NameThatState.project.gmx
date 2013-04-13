@@ -62,9 +62,12 @@
     <sprite>sprites\records_spr</sprite>
     <sprite>sprites\resetStats_spr</sprite>
     <sprite>sprites\muricaText_spr</sprite>
+    <sprite>sprites\menuBase_spr</sprite>
+    <sprite>sprites\menuSide_spr</sprite>
   </sprites>
   <backgrounds name="background">
     <background>background\map_bg</background>
+    <background>background\muricaStars_bg</background>
   </backgrounds>
   <paths name="paths"/>
   <objects name="objects">
@@ -128,6 +131,8 @@
     <object>objects\system_obj</object>
     <object>objects\recordsSystem_obj</object>
     <object>objects\whereIsSystem_obj</object>
+    <object>objects\menuBase_obj</object>
+    <object>objects\menuSide_obj</object>
   </objects>
   <rooms name="rooms">
     <room>rooms\mainMenu_0</room>

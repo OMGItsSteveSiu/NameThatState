@@ -8,7 +8,7 @@
   <parentName>&lt;undefined&gt;</parentName>
   <maskName>&lt;undefined&gt;</maskName>
   <events>
-    <event eventtype="0" enumb="0">
+    <event eventtype="3" enumb="2">
       <action>
         <libid>1</libid>
         <id>603</id>
@@ -25,25 +25,37 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>/*view_enabled = true;
+            <string>if mouse_check_button_pressed(mb_left)
+{
+    mouseStartX = window_mouse_get_x();
+    mouseStartY = window_mouse_get_y();
+}
 
-view_xview[0] = 0;
-view_yview[0] = 0;
-view_wview[0] = 260;
-view_hview[0] = 180;
-view_xport[0] = 0;
-view_yport[0] = 0;
-view_hport[0] = 890;
-view_wport[0] = 538;
-
-view_xview[1] = 0;
-view_yview[1] = 181;
-view_wview[1] = 890;
-view_hview[1] = 200;
-view_xport[1] = 0;
-view_yport[1] = 0;
-view_hport[1] = 890;
-view_wport[1] = 200;*/
+if mouse_check_button(mb_left) 
+{
+    mouseNewX = window_mouse_get_x();
+    mouseNewY = window_mouse_get_y();
+    view_xview[0] += mouseStartX - mouseNewX;
+    view_yview[0] += mouseStartY - mouseNewY;
+    if(view_xview[0] &lt; 0)
+    {
+        view_xview[0] = 0;
+    }
+    if(view_xview[0] &gt; 630)
+    {
+        view_xview[0] = 630;
+    }
+    if(view_yview[0] &lt; 0)
+    {
+        view_yview[0] = 0;
+    }
+    if(view_yview[0] &gt; 358)
+    {
+        view_yview[0] = 358;
+    }
+    mouseStartX = mouseNewX;
+    mouseStartY = mouseNewY;
+}
 </string>
           </argument>
         </arguments>

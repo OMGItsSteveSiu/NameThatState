@@ -8,6 +8,131 @@
   <parentName>&lt;undefined&gt;</parentName>
   <maskName>&lt;undefined&gt;</maskName>
   <events>
+    <event eventtype="0" enumb="0">
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>//State Names
+global.ansKey[0,0] = "Alabama";
+global.ansKey[1,0] = "Alaska";
+global.ansKey[2,0] = "Arizona";
+global.ansKey[3,0] = "Arkansas";
+global.ansKey[4,0] = "California";
+global.ansKey[5,0] = "Colorado";
+global.ansKey[6,0] = "Connecticut";
+global.ansKey[7,0] = "Delaware";
+global.ansKey[8,0] = "Florida";
+global.ansKey[9,0] = "Georgia";
+global.ansKey[10,0] = "Hawaii";
+global.ansKey[11,0] = "Idaho";
+global.ansKey[12,0] = "Illinois";
+global.ansKey[13,0] = "Indiana";
+global.ansKey[14,0] = "Iowa";
+global.ansKey[15,0] = "Kansas";
+global.ansKey[16,0] = "Kentucky";
+global.ansKey[17,0] = "Louisiana";
+global.ansKey[18,0] = "Maine";
+global.ansKey[19,0] = "Maryland";
+global.ansKey[20,0] = "Massachusetts";
+global.ansKey[21,0] = "Michigan";
+global.ansKey[22,0] = "Minnesota";
+global.ansKey[23,0] = "Mississippi";
+global.ansKey[24,0] = "Missouri";
+global.ansKey[25,0] = "Montana";
+global.ansKey[26,0] = "Nebraska";
+global.ansKey[27,0] = "Nevada";
+global.ansKey[28,0] = "New Hampshire";
+global.ansKey[29,0] = "New Jersey";
+global.ansKey[30,0] = "New Mexico";
+global.ansKey[31,0] = "New York";
+global.ansKey[32,0] = "North Carolina";
+global.ansKey[33,0] = "North Dakota";
+global.ansKey[34,0] = "Ohio";
+global.ansKey[35,0] = "Oklahoma";
+global.ansKey[36,0] = "Oregon";
+global.ansKey[37,0] = "Pennsylvania";
+global.ansKey[38,0] = "Rhode Island";
+global.ansKey[39,0] = "South Carolina";
+global.ansKey[40,0] = "South Dakota";
+global.ansKey[41,0] = "Tennessee";
+global.ansKey[42,0] = "Texas";
+global.ansKey[43,0] = "Utah";
+global.ansKey[44,0] = "Vermont";
+global.ansKey[45,0] = "Virginia";
+global.ansKey[46,0] = "Washington";
+global.ansKey[47,0] = "West Virginia";
+global.ansKey[48,0] = "Wisconsin";
+global.ansKey[49,0] = "Wyoming";
+
+//Corresponding Game Object
+global.ansKey[0,1] = alabama_obj;
+global.ansKey[1,1] = alaska_obj;
+global.ansKey[2,1] = arizona_obj;
+global.ansKey[3,1] = arkansas_obj;
+global.ansKey[4,1] = california_obj;
+global.ansKey[5,1] = colorado_obj;
+global.ansKey[6,1] = connecticut_obj;
+global.ansKey[7,1] = delaware_obj;
+global.ansKey[8,1] = florida_obj;
+global.ansKey[9,1] = georgia_obj;
+global.ansKey[10,1] = hawaii_obj;
+global.ansKey[11,1] = idaho_obj;
+global.ansKey[12,1] = illinois_obj;
+global.ansKey[13,1] = indiana_obj;
+global.ansKey[14,1] = iowa_obj;
+global.ansKey[15,1] = kansas_obj;
+global.ansKey[16,1] = kentucky_obj;
+global.ansKey[17,1] = louisiana_obj;
+global.ansKey[18,1] = maine_obj;
+global.ansKey[19,1] = maryland_obj;
+global.ansKey[20,1] = massachusetts_obj;
+global.ansKey[21,1] = michigan_obj;
+global.ansKey[22,1] = minnesota_obj;
+global.ansKey[23,1] = mississippi_obj;
+global.ansKey[24,1] = missouri_obj;
+global.ansKey[25,1] = montana_obj;
+global.ansKey[26,1] = nebraska_obj;
+global.ansKey[27,1] = nevada_obj;
+global.ansKey[28,1] = newHampshire_obj;
+global.ansKey[29,1] = newJersey_obj;
+global.ansKey[30,1] = newMexico_obj;
+global.ansKey[31,1] = newYork_obj;
+global.ansKey[32,1] = northCarolina_obj;
+global.ansKey[33,1] = northDakota_obj;
+global.ansKey[34,1] = ohio_obj;
+global.ansKey[35,1] = oklahoma_obj;
+global.ansKey[36,1] = oregon_obj;
+global.ansKey[37,1] = pennsylvania_obj;
+global.ansKey[38,1] = rhodeIsland_obj;
+global.ansKey[39,1] = southCarolina_obj;
+global.ansKey[40,1] = southDakota_obj;
+global.ansKey[41,1] = tennessee_obj;
+global.ansKey[42,1] = texas_obj;
+global.ansKey[43,1] = utah_obj;
+global.ansKey[44,1] = vermont_obj;
+global.ansKey[45,1] = virginia_obj;
+global.ansKey[46,1] = washington_obj;
+global.ansKey[47,1] = westVirginia_obj;
+global.ansKey[48,1] = wisconsin_obj;
+global.ansKey[49,1] = wyoming_obj;
+</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
     <event eventtype="3" enumb="0">
       <action>
         <libid>1</libid>
