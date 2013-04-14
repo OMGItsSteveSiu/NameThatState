@@ -27,6 +27,12 @@
             <kind>1</kind>
             <string>if(keyboard_check_released(vk_backspace))
 {
+    ini_open("saveFile.ini");
+    ini_write_real("Number","Number One",global.whereIsTotal);
+    ini_write_real("Number","Number Two",global.whereIsCorrect);
+    ini_write_real("Number","Number Three",global.thisStateIsTotal);
+    ini_write_real("Number","Number Four",global.thisStateIsCorrect);
+    ini_close();
     room_goto(mainMenu_0);
 }
 </string>

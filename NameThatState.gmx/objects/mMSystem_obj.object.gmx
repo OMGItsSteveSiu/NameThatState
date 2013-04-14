@@ -83,7 +83,7 @@ global.ansKey[47,0] = "West Virginia";
 global.ansKey[48,0] = "Wisconsin";
 global.ansKey[49,0] = "Wyoming";
 
-//Corresponding Game Object
+//Corresponding Game Object Name
 global.ansKey[0,1] = "alabama_obj";
 global.ansKey[1,1] = "alaska_obj";
 global.ansKey[2,1] = "arizona_obj";
@@ -134,6 +134,58 @@ global.ansKey[46,1] = "washington_obj";
 global.ansKey[47,1] = "westVirginia_obj";
 global.ansKey[48,1] = "wisconsin_obj";
 global.ansKey[49,1] = "wyoming_obj";
+
+//Corresponding Game Object
+global.ansKey[0,2] = alabama_obj;
+global.ansKey[1,2] = alaska_obj;
+global.ansKey[2,2] = arizona_obj;
+global.ansKey[3,2] = arkansas_obj;
+global.ansKey[4,2] = california_obj;
+global.ansKey[5,2] = colorado_obj;
+global.ansKey[6,2] = connecticut_obj;
+global.ansKey[7,2] = delaware_obj;
+global.ansKey[8,2] = florida_obj;
+global.ansKey[9,2] = georgia_obj;
+global.ansKey[10,2] = hawaii_obj;
+global.ansKey[11,2] = idaho_obj;
+global.ansKey[12,2] = illinois_obj;
+global.ansKey[13,2] = indiana_obj;
+global.ansKey[14,2] = iowa_obj;
+global.ansKey[15,2] = kansas_obj;
+global.ansKey[16,2] = kentucky_obj;
+global.ansKey[17,2] = louisiana_obj;
+global.ansKey[18,2] = maine_obj;
+global.ansKey[19,2] = maryland_obj;
+global.ansKey[20,2] = massachusetts_obj;
+global.ansKey[21,2] = michigan_obj;
+global.ansKey[22,2] = minnesota_obj;
+global.ansKey[23,2] = mississippi_obj;
+global.ansKey[24,2] = missouri_obj;
+global.ansKey[25,2] = montana_obj;
+global.ansKey[26,2] = nebraska_obj;
+global.ansKey[27,2] = nevada_obj;
+global.ansKey[28,2] = newHampshire_obj;
+global.ansKey[29,2] = newJersey_obj;
+global.ansKey[30,2] = newMexico_obj;
+global.ansKey[31,2] = newYork_obj;
+global.ansKey[32,2] = northCarolina_obj;
+global.ansKey[33,2] = northDakota_obj;
+global.ansKey[34,2] = ohio_obj;
+global.ansKey[35,2] = oklahoma_obj;
+global.ansKey[36,2] = oregon_obj;
+global.ansKey[37,2] = pennsylvania_obj;
+global.ansKey[38,2] = rhodeIsland_obj;
+global.ansKey[39,2] = southCarolina_obj;
+global.ansKey[40,2] = southDakota_obj;
+global.ansKey[41,2] = tennessee_obj;
+global.ansKey[42,2] = texas_obj;
+global.ansKey[43,2] = utah_obj;
+global.ansKey[44,2] = vermont_obj;
+global.ansKey[45,2] = virginia_obj;
+global.ansKey[46,2] = washington_obj;
+global.ansKey[47,2] = westVirginia_obj;
+global.ansKey[48,2] = wisconsin_obj;
+global.ansKey[49,2] = wyoming_obj;
 </string>
           </argument>
         </arguments>
@@ -160,6 +212,12 @@ global.ansKey[49,1] = "wyoming_obj";
 
 if(keyboard_check_released(vk_backspace))
 {
+    ini_open("saveFile.ini");
+    ini_write_real("Number","Number One",global.whereIsTotal);
+    ini_write_real("Number","Number Two",global.whereIsCorrect);
+    ini_write_real("Number","Number Three",global.thisStateIsTotal);
+    ini_write_real("Number","Number Four",global.thisStateIsCorrect);
+    ini_close();
     game_end();
 }
 

@@ -85,7 +85,7 @@ if mouse_check_button(mb_left)
 
 if(mouse_check_button_released(mb_left))
 {
-    if(current_time-global.lastClickTime &lt;= 300)
+    if(current_time-global.lastClickTime &lt;= 120)
     {
         global.isAClick = 1;
     }

@@ -7,18 +7,47 @@
   <sepmasks>0</sepmasks>
   <bboxmode>0</bboxmode>
   <bbox_left>0</bbox_left>
-  <bbox_right>889</bbox_right>
+  <bbox_right>1049</bbox_right>
   <bbox_top>0</bbox_top>
-  <bbox_bottom>198</bbox_bottom>
+  <bbox_bottom>199</bbox_bottom>
   <HTile>0</HTile>
   <VTile>0</VTile>
   <TextureGroups>
     <TextureGroup0>0</TextureGroup0>
   </TextureGroups>
   <For3D>0</For3D>
-  <width>890</width>
-  <height>199</height>
+  <width>1050</width>
+  <height>200</height>
   <frames>
     <frame index="0">images\menuBase_spr_0.png</frame>
+    <frame index="1">images\menuBase_spr_1.png</frame>
+    <frame index="2">images\menuBase_spr_2.png</frame>
+    <frame index="3">images\menuBase_spr_3.png</frame>
+    <frame index="4">images\menuBase_spr_4.png</frame>
+    <frame index="5">images\menuBase_spr_5.png</frame>
+    <frame index="6">images\menuBase_spr_6.png</frame>
+    <frame index="7">images\menuBase_spr_7.png</frame>
+    <frame index="8">images\menuBase_spr_8.png</frame>
+    <frame index="9">images\menuBase_spr_9.png</frame>
+    <frame index="10">images\menuBase_spr_10.png</frame>
+    <frame index="11">images\menuBase_spr_11.png</frame>
+    <frame index="12">images\menuBase_spr_12.png</frame>
+    <frame index="13">images\menuBase_spr_13.png</frame>
+    <frame index="14">images\menuBase_spr_14.png</frame>
+    <frame index="15">images\menuBase_spr_15.png</frame>
+    <frame index="16">images\menuBase_spr_16.png</frame>
+    <frame index="17">images\menuBase_spr_17.png</frame>
+    <frame index="18">images\menuBase_spr_18.png</frame>
+    <frame index="19">images\menuBase_spr_19.png</frame>
+    <frame index="20">images\menuBase_spr_20.png</frame>
+    <frame index="21">images\menuBase_spr_21.png</frame>
+    <frame index="22">images\menuBase_spr_22.png</frame>
+    <frame index="23">images\menuBase_spr_23.png</frame>
+    <frame index="24">images\menuBase_spr_24.png</frame>
+    <frame index="25">images\menuBase_spr_25.png</frame>
+    <frame index="26">images\menuBase_spr_26.png</frame>
+    <frame index="27">images\menuBase_spr_27.png</frame>
+    <frame index="28">images\menuBase_spr_28.png</frame>
+    <frame index="29">images\menuBase_spr_29.png</frame>
   </frames>
 </sprite>

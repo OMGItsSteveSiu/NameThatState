@@ -7,7 +7,7 @@
   <sepmasks>0</sepmasks>
   <bboxmode>0</bboxmode>
   <bbox_left>0</bbox_left>
-  <bbox_right>198</bbox_right>
+  <bbox_right>199</bbox_right>
   <bbox_top>0</bbox_top>
   <bbox_bottom>737</bbox_bottom>
   <HTile>0</HTile>
@@ -16,7 +16,7 @@
     <TextureGroup0>0</TextureGroup0>
   </TextureGroups>
   <For3D>0</For3D>
-  <width>199</width>
+  <width>200</width>
   <height>738</height>
   <frames>
     <frame index="0">images\menuSide_spr_0.png</frame>

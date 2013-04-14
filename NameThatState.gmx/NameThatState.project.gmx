@@ -68,6 +68,7 @@
   <backgrounds name="background">
     <background>background\map_bg</background>
     <background>background\muricaStars_bg</background>
+    <background>background\records_bg</background>
   </backgrounds>
   <paths name="paths"/>
   <scripts name="scripts">
@@ -137,6 +138,7 @@
     <object>objects\system_obj</object>
     <object>objects\recordsSystem_obj</object>
     <object>objects\whereIsSystem_obj</object>
+    <object>objects\thisStateIsSystem_obj</object>
     <object>objects\menuBase_obj</object>
     <object>objects\menuSide_obj</object>
   </objects>
