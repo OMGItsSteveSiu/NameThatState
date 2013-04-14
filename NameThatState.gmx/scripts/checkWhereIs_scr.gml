@@ -6,6 +6,11 @@ if(global.isAClick) //You clicked the state
         if(string(global.ansKey[global.question,1])==string(object_get_name(object_index)))
         {
             global.whereIsCorrect++;
+            global.lastCorrect = 1;
+        }
+        else
+        {
+            global.lastCorrect = 0;
         }
         global.question = irandom_range(0,49);
     }

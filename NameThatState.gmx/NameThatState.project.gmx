@@ -73,6 +73,9 @@
   <scripts name="scripts">
     <script>scripts\checkWhereIs_scr.gml</script>
   </scripts>
+  <fonts name="fonts">
+    <font>fonts\brokenGhost_fnt</font>
+  </fonts>
   <objects name="objects">
     <object>objects\alabama_obj</object>
     <object>objects\alaska_obj</object>

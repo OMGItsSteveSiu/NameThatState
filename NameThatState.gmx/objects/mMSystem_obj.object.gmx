@@ -26,6 +26,7 @@
           <argument>
             <kind>1</kind>
             <string>global.question = -1;
+global.lastCorrect = -1;
 random_set_seed(current_second);
 global.lastClickTime = current_time;
 global.isAClick = 0;

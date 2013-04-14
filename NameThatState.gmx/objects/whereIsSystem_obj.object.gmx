@@ -116,10 +116,24 @@ if(mouse_check_button_released(mb_left))
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>draw_text(20,600,"Where is: " + string(global.ansKey[global.question,0]));
-draw_text(20,700,"Is A Click: " + string(global.isAClick));
+            <string>draw_set_font(brokenGhost_fnt);
 
-draw_text(900,50,"Answer: " + string(global.ansKey[global.question,1]));
+draw_text(400,620,"Where is: " + string(global.ansKey[global.question,0]));
+//draw_text(20,700,"Is A Click: " + string(global.isAClick));
+
+if(global.lastCorrect == 0)
+{
+    draw_text(940,100,"WRONG! What");
+    draw_text(920,150,"Country You From?");
+}
+else if(global.lastCorrect == 1)
+{
+    draw_text(930,100,"Ermahgerd! Yurr");
+    draw_text(940,150,"A Jeenyuss!!!");
+}
+
+draw_text(910,630,"Total Answered: " + string(global.whereIsTotal));
+draw_text(910,600,"Total Correct: " + string(global.whereIsCorrect));
 </string>
           </argument>
         </arguments>

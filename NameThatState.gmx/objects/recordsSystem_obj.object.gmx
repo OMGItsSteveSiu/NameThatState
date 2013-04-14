@@ -48,9 +48,9 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>draw_text(50,50,"Where Is This State Total Answered:");
+            <string>draw_text(50,50,"Where Is This State - Total Answered:");
 draw_text(50,100,global.whereIsTotal);
-draw_text(50,150,"Where Is This State Total Correct:");
+draw_text(50,150,"Where Is This State - Total Correct:");
 draw_text(50,200,global.whereIsCorrect);
 draw_text(50,250,"Accuracy");
 if(global.whereIsCorrect == 0)
@@ -62,9 +62,9 @@ else
     draw_text(50,300,string(floor((global.whereIsCorrect/global.whereIsTotal)*100))+"%");
 }
 
-draw_text(400,50,"This State Is Total Answered:");
+draw_text(400,50,"This State Is - Total Answered:");
 draw_text(400,100,global.thisStateIsTotal);
-draw_text(400,150,"This State Is Total Correct:");
+draw_text(400,150,"This State Is - Total Correct:");
 draw_text(400,200,global.thisStateIsCorrect);
 draw_text(400,250,"Accuracy");
 if(global.thisStateIsCorrect == 0)
