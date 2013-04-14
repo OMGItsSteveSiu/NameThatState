@@ -59,7 +59,7 @@ if(global.whereIsCorrect == 0)
 }
 else
 {
-    draw_text(50,300,string(floor((global.whereIsTotal/global.whereIsCorrect)*100))+"%");
+    draw_text(50,300,string(floor((global.whereIsCorrect/global.whereIsTotal)*100))+"%");
 }
 
 draw_text(400,50,"This State Is Total Answered:");
@@ -73,7 +73,7 @@ if(global.thisStateIsCorrect == 0)
 }
 else
 {
-    draw_text(400,300,string(floor((global.thisStateIsTotal/global.thisStateIsCorrect)*100))+"%");
+    draw_text(400,300,string(floor((global.thisStateIsCorrect/global.thisStateIsTotal)*100))+"%");
 }
 </string>
           </argument>

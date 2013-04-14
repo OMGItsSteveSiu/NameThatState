@@ -25,7 +25,12 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>//State Names
+            <string>global.question = -1;
+random_set_seed(current_second);
+global.lastClickTime = current_time;
+global.isAClick = 0;
+
+//State Names
 global.ansKey[0,0] = "Alabama";
 global.ansKey[1,0] = "Alaska";
 global.ansKey[2,0] = "Arizona";
@@ -78,56 +83,56 @@ global.ansKey[48,0] = "Wisconsin";
 global.ansKey[49,0] = "Wyoming";
 
 //Corresponding Game Object
-global.ansKey[0,1] = alabama_obj;
-global.ansKey[1,1] = alaska_obj;
-global.ansKey[2,1] = arizona_obj;
-global.ansKey[3,1] = arkansas_obj;
-global.ansKey[4,1] = california_obj;
-global.ansKey[5,1] = colorado_obj;
-global.ansKey[6,1] = connecticut_obj;
-global.ansKey[7,1] = delaware_obj;
-global.ansKey[8,1] = florida_obj;
-global.ansKey[9,1] = georgia_obj;
-global.ansKey[10,1] = hawaii_obj;
-global.ansKey[11,1] = idaho_obj;
-global.ansKey[12,1] = illinois_obj;
-global.ansKey[13,1] = indiana_obj;
-global.ansKey[14,1] = iowa_obj;
-global.ansKey[15,1] = kansas_obj;
-global.ansKey[16,1] = kentucky_obj;
-global.ansKey[17,1] = louisiana_obj;
-global.ansKey[18,1] = maine_obj;
-global.ansKey[19,1] = maryland_obj;
-global.ansKey[20,1] = massachusetts_obj;
-global.ansKey[21,1] = michigan_obj;
-global.ansKey[22,1] = minnesota_obj;
-global.ansKey[23,1] = mississippi_obj;
-global.ansKey[24,1] = missouri_obj;
-global.ansKey[25,1] = montana_obj;
-global.ansKey[26,1] = nebraska_obj;
-global.ansKey[27,1] = nevada_obj;
-global.ansKey[28,1] = newHampshire_obj;
-global.ansKey[29,1] = newJersey_obj;
-global.ansKey[30,1] = newMexico_obj;
-global.ansKey[31,1] = newYork_obj;
-global.ansKey[32,1] = northCarolina_obj;
-global.ansKey[33,1] = northDakota_obj;
-global.ansKey[34,1] = ohio_obj;
-global.ansKey[35,1] = oklahoma_obj;
-global.ansKey[36,1] = oregon_obj;
-global.ansKey[37,1] = pennsylvania_obj;
-global.ansKey[38,1] = rhodeIsland_obj;
-global.ansKey[39,1] = southCarolina_obj;
-global.ansKey[40,1] = southDakota_obj;
-global.ansKey[41,1] = tennessee_obj;
-global.ansKey[42,1] = texas_obj;
-global.ansKey[43,1] = utah_obj;
-global.ansKey[44,1] = vermont_obj;
-global.ansKey[45,1] = virginia_obj;
-global.ansKey[46,1] = washington_obj;
-global.ansKey[47,1] = westVirginia_obj;
-global.ansKey[48,1] = wisconsin_obj;
-global.ansKey[49,1] = wyoming_obj;
+global.ansKey[0,1] = "alabama_obj";
+global.ansKey[1,1] = "alaska_obj";
+global.ansKey[2,1] = "arizona_obj";
+global.ansKey[3,1] = "arkansas_obj";
+global.ansKey[4,1] = "california_obj";
+global.ansKey[5,1] = "colorado_obj";
+global.ansKey[6,1] = "connecticut_obj";
+global.ansKey[7,1] = "delaware_obj";
+global.ansKey[8,1] = "florida_obj";
+global.ansKey[9,1] = "georgia_obj";
+global.ansKey[10,1] = "hawaii_obj";
+global.ansKey[11,1] = "idaho_obj";
+global.ansKey[12,1] = "illinois_obj";
+global.ansKey[13,1] = "indiana_obj";
+global.ansKey[14,1] = "iowa_obj";
+global.ansKey[15,1] = "kansas_obj";
+global.ansKey[16,1] = "kentucky_obj";
+global.ansKey[17,1] = "louisiana_obj";
+global.ansKey[18,1] = "maine_obj";
+global.ansKey[19,1] = "maryland_obj";
+global.ansKey[20,1] = "massachusetts_obj";
+global.ansKey[21,1] = "michigan_obj";
+global.ansKey[22,1] = "minnesota_obj";
+global.ansKey[23,1] = "mississippi_obj";
+global.ansKey[24,1] = "missouri_obj";
+global.ansKey[25,1] = "montana_obj";
+global.ansKey[26,1] = "nebraska_obj";
+global.ansKey[27,1] = "nevada_obj";
+global.ansKey[28,1] = "newHampshire_obj";
+global.ansKey[29,1] = "newJersey_obj";
+global.ansKey[30,1] = "newMexico_obj";
+global.ansKey[31,1] = "newYork_obj";
+global.ansKey[32,1] = "northCarolina_obj";
+global.ansKey[33,1] = "northDakota_obj";
+global.ansKey[34,1] = "ohio_obj";
+global.ansKey[35,1] = "oklahoma_obj";
+global.ansKey[36,1] = "oregon_obj";
+global.ansKey[37,1] = "pennsylvania_obj";
+global.ansKey[38,1] = "rhodeIsland_obj";
+global.ansKey[39,1] = "southCarolina_obj";
+global.ansKey[40,1] = "southDakota_obj";
+global.ansKey[41,1] = "tennessee_obj";
+global.ansKey[42,1] = "texas_obj";
+global.ansKey[43,1] = "utah_obj";
+global.ansKey[44,1] = "vermont_obj";
+global.ansKey[45,1] = "virginia_obj";
+global.ansKey[46,1] = "washington_obj";
+global.ansKey[47,1] = "westVirginia_obj";
+global.ansKey[48,1] = "wisconsin_obj";
+global.ansKey[49,1] = "wyoming_obj";
 </string>
           </argument>
         </arguments>
@@ -150,7 +155,9 @@ global.ansKey[49,1] = wyoming_obj;
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>if(keyboard_check_released(vk_backspace))
+            <string>global.question = irandom_range(0,49);
+
+if(keyboard_check_released(vk_backspace))
 {
     game_end();
 }
