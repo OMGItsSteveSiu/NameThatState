@@ -11,42 +11,41 @@
     <event eventtype="0" enumb="0">
       <action>
         <libid>1</libid>
-        <id>603</id>
-        <kind>7</kind>
+        <id>601</id>
+        <kind>0</kind>
         <userelative>0</userelative>
         <isquestion>0</isquestion>
         <useapplyto>-1</useapplyto>
-        <exetype>2</exetype>
-        <functionname></functionname>
+        <exetype>1</exetype>
+        <functionname>action_execute_script</functionname>
         <codestring></codestring>
         <whoName>self</whoName>
         <relative>0</relative>
         <isnot>0</isnot>
         <arguments>
           <argument>
-            <kind>1</kind>
-            <string>global.correctMultChoice = irandom_range(0,4);
-
-//Array init
-for(i=0; i&lt;50; i++)
-{
-    global.shuffledArray[i] = i;
-}
-
-//Array shuffle
-for(i = 0; i &lt; 50; i++)
-{
-    j = irandom_range(i, 50 - 1)
-    if (i != j)
-    {
-        k = global.shuffledArray[i]
-        global.shuffledArray[i] = global.shuffledArray[j]
-        global.shuffledArray[j] = k
-    }
-}
-
-instance_create(445,269,global.ansKey[global.shuffledArray[global.correctMultChoice],2]);
-</string>
+            <kind>9</kind>
+            <script>checkThisStateIs_scr</script>
+          </argument>
+          <argument>
+            <kind>0</kind>
+            <string>0</string>
+          </argument>
+          <argument>
+            <kind>0</kind>
+            <string>0</string>
+          </argument>
+          <argument>
+            <kind>0</kind>
+            <string>0</string>
+          </argument>
+          <argument>
+            <kind>0</kind>
+            <string>0</string>
+          </argument>
+          <argument>
+            <kind>0</kind>
+            <string>0</string>
           </argument>
         </arguments>
       </action>
@@ -69,17 +68,18 @@ instance_create(445,269,global.ansKey[global.shuffledArray[global.correctMultCho
           <argument>
             <kind>1</kind>
             <string>//draw_set_font(brokenGhost_fnt);
+draw_set_color(c_black);
 draw_text(300,620,"What State Is This?");
 
 if(global.lastCorrect == 0)
 {
-    draw_text(400,610,"WRONG! What");
-    draw_text(380,630,"Country You From?");
+    draw_text(600,610,"WRONG! What");
+    draw_text(580,630,"Country You From?");
 }
 else if(global.lastCorrect == 1)
 {
-    draw_text(400,610,"Ermahgerd! Yurr");
-    draw_text(410,630,"A Jeenyuss!!!");
+    draw_text(600,610,"Ermahgerd! Yurr");
+    draw_text(610,630,"A Jeenyuss!!!");
 }
 
 draw_text(900,630,"Total Answered: " + string(global.thisStateIsTotal));

@@ -77,6 +77,8 @@
   <paths name="paths"/>
   <scripts name="scripts">
     <script>scripts\checkWhereIs_scr.gml</script>
+    <script>scripts\checkThisStateIs_scr.gml</script>
+    <script>scripts\buttonCheck_scr.gml</script>
   </scripts>
   <fonts name="fonts">
     <font>fonts\brokenGhost_fnt</font>
