@@ -25,7 +25,7 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>global.question = irandom_range(0,49);
+            <string>global.correctMultChoice = irandom_range(0,4);
 
 //Array init
 for(i=0; i&lt;50; i++)
@@ -45,7 +45,7 @@ for(i = 0; i &lt; 50; i++)
     }
 }
 
-instance_create(250,250,global.ansKey[global.question,2]);
+instance_create(445,269,global.ansKey[global.shuffledArray[global.correctMultChoice],2]);
 </string>
           </argument>
         </arguments>
@@ -68,7 +68,8 @@ instance_create(250,250,global.ansKey[global.question,2]);
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>draw_text(300,620,"What State Is This?");
+            <string>//draw_set_font(brokenGhost_fnt);
+draw_text(300,620,"What State Is This?");
 
 if(global.lastCorrect == 0)
 {
@@ -81,17 +82,21 @@ else if(global.lastCorrect == 1)
     draw_text(410,630,"A Jeenyuss!!!");
 }
 
-draw_text(800,630,"Total Answered: " + string(global.thisStateIsTotal));
-draw_text(800,600,"Total Correct: " + string(global.thisStateIsCorrect));
+draw_text(900,630,"Total Answered: " + string(global.thisStateIsTotal));
+draw_text(900,600,"Total Correct: " + string(global.thisStateIsCorrect));
 
 //State Names
-for(i = 0; i &lt; 25; i++)
+for(i = 0; i &lt; 5; i++)
 {
-    draw_text(700,10+(i*20),string(global.shuffledArray[i]));
-}
-for(i = 25; i &lt; 50; i++)
-{
-    draw_text(900,10+((i-25)*20),string(global.shuffledArray[i]));
+    if(i==0||i==2||i==4)
+    {
+        draw_set_color(c_white);
+    }
+    else
+    {
+        draw_set_color(c_black);
+    }
+    draw_text(900,50+(i*108),string(global.ansKey[global.shuffledArray[i],0]));
 }
 </string>
           </argument>

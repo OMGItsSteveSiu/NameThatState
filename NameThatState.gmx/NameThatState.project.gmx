@@ -64,11 +64,15 @@
     <sprite>sprites\muricaText_spr</sprite>
     <sprite>sprites\menuBase_spr</sprite>
     <sprite>sprites\menuSide_spr</sprite>
+    <sprite>sprites\redRect_spr</sprite>
+    <sprite>sprites\whiteRect_spr</sprite>
+    <sprite>sprites\blueRect_spr</sprite>
   </sprites>
   <backgrounds name="background">
     <background>background\map_bg</background>
     <background>background\muricaStars_bg</background>
     <background>background\records_bg</background>
+    <background>background\thisStateIs_bg</background>
   </backgrounds>
   <paths name="paths"/>
   <scripts name="scripts">
@@ -141,6 +145,11 @@
     <object>objects\thisStateIsSystem_obj</object>
     <object>objects\menuBase_obj</object>
     <object>objects\menuSide_obj</object>
+    <object>objects\tSIButtonOne_obj</object>
+    <object>objects\tSIButtonTwo_obj</object>
+    <object>objects\tSIButtonThree_obj</object>
+    <object>objects\tSIButtonFour_obj</object>
+    <object>objects\tSIButtonFive_obj</object>
   </objects>
   <rooms name="rooms">
     <room>rooms\mainMenu_0</room>
