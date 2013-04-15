@@ -26,6 +26,25 @@
           <argument>
             <kind>1</kind>
             <string>global.question = irandom_range(0,49);
+
+//Array init
+for(i=0; i&lt;50; i++)
+{
+    global.shuffledArray[i] = i;
+}
+
+//Array shuffle
+for(i = 0; i &lt; 50; i++)
+{
+    j = irandom_range(i, 50 - 1)
+    if (i != j)
+    {
+        k = global.shuffledArray[i]
+        global.shuffledArray[i] = global.shuffledArray[j]
+        global.shuffledArray[j] = k
+    }
+}
+
 instance_create(250,250,global.ansKey[global.question,2]);
 </string>
           </argument>
@@ -68,11 +87,11 @@ draw_text(800,600,"Total Correct: " + string(global.thisStateIsCorrect));
 //State Names
 for(i = 0; i &lt; 25; i++)
 {
-    draw_text(700,10+(i*20),global.ansKey[i,0]);
+    draw_text(700,10+(i*20),string(global.shuffledArray[i]));
 }
 for(i = 25; i &lt; 50; i++)
 {
-    draw_text(900,10+((i-25)*20),global.ansKey[i,0]);
+    draw_text(900,10+((i-25)*20),string(global.shuffledArray[i]));
 }
 </string>
           </argument>
