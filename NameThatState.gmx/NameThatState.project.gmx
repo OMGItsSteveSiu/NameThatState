@@ -67,6 +67,8 @@
     <sprite>sprites\redRect_spr</sprite>
     <sprite>sprites\whiteRect_spr</sprite>
     <sprite>sprites\blueRect_spr</sprite>
+    <sprite>sprites\selectRect_spr</sprite>
+    <sprite>sprites\selectOrb_spr</sprite>
   </sprites>
   <backgrounds name="background">
     <background>background\map_bg</background>
@@ -152,6 +154,8 @@
     <object>objects\tSIButtonThree_obj</object>
     <object>objects\tSIButtonFour_obj</object>
     <object>objects\tSIButtonFive_obj</object>
+    <object>objects\selectRect_obj</object>
+    <object>objects\selectOrb_obj</object>
   </objects>
   <rooms name="rooms">
     <room>rooms\mainMenu_0</room>
