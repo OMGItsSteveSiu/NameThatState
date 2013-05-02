@@ -69,17 +69,21 @@
             <kind>1</kind>
             <string>//draw_set_font(brokenGhost_fnt);
 draw_set_color(c_black);
-draw_text(300,620,"What State Is This?");
+draw_text(600,580,"What State Is This?");
 
 if(global.lastCorrect == 0)
 {
-    draw_text(600,610,"WRONG! What");
-    draw_text(580,630,"Country You From?");
+    draw_text(630,610,"WRONG! What");
+    draw_text(610,630,"Country You From?");
 }
 else if(global.lastCorrect == 1)
 {
-    draw_text(600,610,"Ermahgerd! Yurr");
-    draw_text(610,630,"A Jeenyuss!!!");
+    draw_text(620,610,"Ermahgerd! Yurr");
+    draw_text(630,630,"A Jeenyuss!!!");
+    draw_text(270,580,"Fun Facts About " + global.ansKey[global.lastQuestion,0]);
+    draw_text(320,620,"Capital: " + global.ansKey[global.lastQuestion,3]);
+    draw_text(320,650,"Population:" + global.ansKey[global.lastQuestion,4]);
+    draw_text(320,680,"Date " + global.ansKey[global.lastQuestion,0] + " joined the Union: " + global.ansKey[global.lastQuestion,5]);
 }
 
 draw_text(900,630,"Total Answered: " + string(global.thisStateIsTotal));

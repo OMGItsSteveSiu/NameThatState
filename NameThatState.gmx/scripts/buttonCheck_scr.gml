@@ -8,6 +8,7 @@ else
 {
     global.lastCorrect = 0;
 }
+global.lastQuestion = global.shuffledArray[global.correctMultChoice];
 with(global.ansKey[global.shuffledArray[global.correctMultChoice],2])
 {
     instance_destroy();

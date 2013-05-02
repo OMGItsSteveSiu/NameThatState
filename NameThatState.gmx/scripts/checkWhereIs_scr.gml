@@ -10,6 +10,7 @@ if(global.isAClick) //You clicked the state
         global.whereIsTotal++;
         if(string(global.ansKey[global.question,1])==string(object_get_name(object_index)))
         {
+            global.lastQuestion = global.question;
             global.whereIsCorrect++;
             global.lastCorrect = 1;
         }
